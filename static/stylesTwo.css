@@ -1,0 +1,68 @@
+body{
+    background:url(backgroundImgTwo.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#header{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:gold;
+    text-align:center;
+    background-color: midnightblue;
+    position: relative;
+    z-index: 15;
+}
+
+.quote{
+    color:gold;
+    line-height: 20px;
+    margin-left:20px;
+    margin-top:-35px;
+    position: absolute;
+    z-index: 20;
+}
+
+.info{
+    color:gold;
+    font-weight: bold;
+    position: relative;
+    z-index:30;
+}
+#f1{
+    background-color: black;
+    border-color: white;
+}
+
+#f2{
+    background-color: black;
+    border-color: white;
+    border-radius: 50px;
+}
+
+.linkhp{
+    float:right;
+    background-color:midnightblue;
+    color:gold;
+    border-color:black;
+    border-style: solid;
+    text-decoration: none;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.linkhp:hover{
+    float:right;
+    background-color: black;
+    color:gold;
+    border-color:mediumblue;
+    border-style: solid;
+    text-decoration: none;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+

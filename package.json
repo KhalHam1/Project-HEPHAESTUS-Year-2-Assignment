@@ -1,0 +1,17 @@
+{
+    "name": "hephaestus",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "init": "flask init",
+      "serve": "flask run"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/KhalHam1/Project-HEPHAESTUS-Year-2-Assignment.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "none"
+  }
+  

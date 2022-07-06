@@ -1,0 +1,83 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to HEPHAESTUS</title>
+        <link rel="stylesheet" type="text/css" href="stylesFour.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesFour.css') }}">
+    </head>
+
+    <body>
+        <fieldset id=f1>
+        <h1 style="color:gold">Prove Your Worth.</h1>
+        <a href="/" class=linkhp>Return Home</a>
+        <h2 style="color:gold"><i>It is said that even the most legendary
+            journeys begin with a single step.
+        </i></h2>
+        </fieldset>
+        <p id=snp>The information you enter below will determine 
+            if you are worthy of the opportunity of becoming
+            a Hephaestian. Note that you will be held sternly
+             to your every answer should you make it to the next
+             stage. Answer honestly and follow your instincts.
+        </p><br><br>
+        <div class=warning>The consequences of dishonesty are dire...</div>
+        <fieldset class=signup>
+       <form>
+           <table style="width:57%">
+            <tr>
+                <td style="color:gold">Reveal Your Primary Identification:</td>
+                <td><input id="FName" type="text" name="FName"></td>
+            </tr>
+            <tr>
+                <td style="color:gold">Reveal Your Ancestral Identificaion:</td>
+                <td><input id="FName" type="text" name="FName"></td>
+            </tr>
+            <tr>
+                <td style="color:gold">State Your Gender:</td>
+                <td><select>
+                    <option id="Male" value="Male">Male</option>
+                    <option id="Female" value="Female">Female</option>
+                    <option id="Cerebral" value="Cerebral">Cerebral</option>
+                    <option id="Monk" value="Monk">Monk</option>
+                    <option id="Other" value="Other">Other</option>
+                    </select>
+            </td>
+            </tr>
+            <tr>
+                <td style="color:gold">Impart the Date and Time of Your Genesis.</td>
+                <td><input id="dob" type="date" name="dob"></td>
+                <td><input id="dtime" type="time" name="dtime"></td>
+            </tr>
+            <tr>
+                <td style="color:gold">Enter Your GS Address</td>
+                <td><input id="addr" type="email" name="addr"></td>
+            </tr>
+            <tr>
+                <td style="color:gold">Enter Your GS Number:</td>
+                <td><input id="gsno" type="number" name="gsno"></td>
+            </tr>
+            <tr style="color:gold">
+                <td style="vertical-align:top">WHY are you worthy?</td>
+                <td colspan="2"><textarea id="descrption" rows="20" cols="60"></textarea></td>
+            </tr>
+            <tr>
+                <td style="color:gold">Provide your Tracking Encryption***</td>
+                <td><input id="pass" type="password" name="pass"></td>
+            </tr>
+        </table>
+       </form> 
+       </fieldset>
+       <button id=tts onclick="function1()">TAKE THE STEP.</button>
+       <p id=response></p>
+       <script type="text/javascript">
+       function function1()
+       {
+         var s1="Welcome Hephaestian. Sit tight! Teleportation is imminent!........................";
+         var s2 = s1;
+         document.getElementById("response").innerHTML = s2;
+       }
+       </script>
+
+    </body>
+

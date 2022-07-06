@@ -1,0 +1,80 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <title>ABOUT Project HEPHAESTUS.</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesThree.css') }}">
+        
+    </head>
+
+    <body>
+        <fieldset id=f1>
+        <h1 class=header>About Project HEPHAESTUS</h1>
+        <a href="/" class=linkhp>Return Home</a>
+        </fieldset>
+        <h2 style="color:gold">Where It All Began.</h2>
+        <fieldset id=f2>
+        <div style="color:rgb(255, 200, 60)">
+        <p>In the year 2631 a time of great calamity was drawing near. Earth's natural resources had long been depleted and for centuries, 
+            humanity survived solely on solar energy. For a time, this brought about great advancements in human technology. Oil and Natural Gas
+            were no longer needed. Earth's Ozone Layer was slowly rehabilitated. From powering simple appliances to the largest of factories,
+             the sun provided it all. Our atmosphere was purged of many forms of toxicity and on the rare occasion of disease, breakthrough 
+             medical discoveries ensured swift and effortless recoveries. Every region of the Earth became inhabited and Earth's population grew
+             rapidly across 3 centuries until 20 billion humans occupied the planet. After 306 years of unwavering prosperity, one breakthrough
+             discovery proved to be one too many. An undesirable gateway onto the currents of time.
+
+
+         </p>
+         </fieldset>
+         
+        </div>
+        <div class="container" id="viz">
+            <canvas id="myChart"></canvas>
+        </div>
+        <script>
+            let myChart = document.getElementById('myChart').getContext('2d');
+            Chart.defaults.global.defaultFontColor = "white";
+
+            let massPopChart = new Chart(myChart, {
+                type:'bar', 
+                data:{
+                    labels:['2030','2230','2430','2630','2830'],
+                    datasets:[{
+                        label:'Human Population(Billions)',
+                        data:[
+                           8.41,
+                           11.48,
+                           14.58,
+                           20.08,
+                           5.68
+
+                        ],
+                        backgroundColor:[
+                          'skyblue',
+                          'blue',
+                          'mediumblue',
+                          'midnightblue',
+                          'red'
+
+                        ],
+                        borderWidth:3,
+                        borderColor:'Silver'
+                    }]
+                },
+                options:{
+                    title:{
+                        display:true,
+                        text:'Chart Illustrating the Fluctuations of the Human Population(Billions) over the last 8 Centuries.',
+                        fontSize:18
+                    },
+                    legend:{
+                        display:false
+
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
