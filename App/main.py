@@ -17,6 +17,8 @@ def create_app():
 
 app = create_app()
 
+# migrate = get_migrate(app)
+
 @app.route('/', methods=['GET'])
 def homePage():
   return render_template('homePage.html')
